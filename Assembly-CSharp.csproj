@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\AppStart.cs" />
      <Compile Include="Assets\scripts\BlockSpawner.cs" />
+     <Compile Include="Assets\scripts\DontDestroyAudio.cs" />
      <Compile Include="Assets\scripts\FollowerPlayer.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\GameStageManager.cs" />
