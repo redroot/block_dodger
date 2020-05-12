@@ -16,10 +16,9 @@ public class GameStageManager : MonoBehaviour
     public CanvasGroup stageThreeLabel;
     public CanvasGroup stageFourLabel;
 
-    float stageOneStartDistance = 0;
-    float stageTwoStartDistance = 250;
-    float stageThreeStartDistance = 500;
-    float stageFourStartDistance = 750; // 1000 apart
+    float stageTwoStartDistance = 500;
+    float stageThreeStartDistance = 1100;
+    float stageFourStartDistance = 1900; // 1000 apart
 
     Color stageTwoColour = new Color32(191, 231, 248, 255);
     Color stageThreeColour = new Color32(255, 203, 158, 255);

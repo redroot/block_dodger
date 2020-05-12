@@ -22,9 +22,9 @@ public class ScoreManager : MonoBehaviour
         lastPlayerPos = currentPlayerPos;
 
         if (gameManager.poweredUp) {
-            score += (int) diff * 2;
+            score += (int) diff * 3;
             currentFontStyle = FontStyle.Bold;
-            currentFontColor = Color.magenta;
+            currentFontColor = Color.red;
         } else {
             score += (int) diff;
             currentFontStyle = FontStyle.Normal;
