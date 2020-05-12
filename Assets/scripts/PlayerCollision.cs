@@ -17,8 +17,6 @@ public class PlayerCollision : MonoBehaviour
         } else if (other.collider.tag == "PowerUp") {
             gameManager.PowerUpPlayerFor(10.0f);
             Destroy(other.gameObject);
-        } else {
-            Debug.Log("Collided with " + other.collider.name);
         }
     }
 }
