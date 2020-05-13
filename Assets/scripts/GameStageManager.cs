@@ -53,7 +53,7 @@ public class GameStageManager : MonoBehaviour
            stageFourLabel.alpha = 1.0f;
            stageThreeLabel.alpha = 0.5f;
            directionalLight.color = stageFourColour;
-           blockSpawner.blocksPerWave = 10;
+           blockSpawner.blocksPerWave = 12;
            // interpolate colour with a co routine here or invoke a function;
        } else if (player.position.z > stageThreeStartDistance) {
            stageThreeReached = true;
@@ -61,14 +61,14 @@ public class GameStageManager : MonoBehaviour
            stageThreeLabel.alpha = 1.0f;
            stageTwoLabel.alpha = 0.5f;
            directionalLight.color = stageThreeColour;
-           blockSpawner.blocksPerWave = 7;
+           blockSpawner.blocksPerWave = 8;
        } else if (player.position.z > stageTwoStartDistance) {
            stageTwoReached = true;
            currentStage = Stage.StageTwo;
            stageTwoLabel.alpha = 1.0f;
            stageOneLabel.alpha = 0.5f;
            directionalLight.color = stageTwoColour;
-           blockSpawner.blocksPerWave = 4;
+           blockSpawner.blocksPerWave = 6;
        }
     }
 }

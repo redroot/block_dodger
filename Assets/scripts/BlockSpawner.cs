@@ -8,13 +8,13 @@ public class BlockSpawner : MonoBehaviour
     public GameObject blockObstaclePrefab;
 
     Queue<GameObject> blocks = new Queue<GameObject>();
-    int initialWavesCount = 6;
+    int initialWavesCount = 15;
     
     int waveCount = 0;
     int blockDistance = 60;
 
     float blockPassGap = 10.0f;
-    public int blocksPerWave = 3;
+    public int blocksPerWave = 4;
     public float timeBetweenWaves = 2f;
 	private float timeToSpawn = 4f;
     
