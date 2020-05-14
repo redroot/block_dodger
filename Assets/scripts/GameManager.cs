@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public bool poweredUp = false;
 
     public void Update () {
+        if (Input.GetKeyDown(KeyCode.Escape) == true) {
+            Application.Quit();
+        }
     }
 
     public void PowerUpPlayer () {
@@ -30,18 +33,18 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-        public void GoToTitleScene () {
+    public void GoToTitleScene () {
         SceneManager.LoadScene("TitleScene");
+    }
+
+    public void GoToCountdownScene () {
+        SceneManager.LoadScene("CountdownScene");
     }
 
     public void EndGame() {
         if (!gameHasEnded) {
             gameHasEnded = true;
-            Invoke("Restart", gameRelaunchDelay);
+            Invoke("GoToCountdownScene", gameRelaunchDelay);
         }
-    }
-
-    void Restart() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
