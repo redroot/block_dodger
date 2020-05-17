@@ -16,10 +16,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -66,9 +64,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 27732}
+      Script: {instanceID: 12958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -145,9 +143,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,7 +208,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -614,6 +612,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 374171efc3630fb1ad02438836d2930a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CountdownAnimator
+  - hash:
+      serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -714,15 +718,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 374171efc3630fb1ad02438836d2930a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CountdownAnimator
   platform: 2
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
   - Assets/Scenes/CountdownScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: /Users/lukewilliams/Desktop/game.app
+  playerPath: /Users/lukewilliams/Desktop/blockdodger.app
